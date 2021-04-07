@@ -1,0 +1,14 @@
+
+.vs/
+*.tlog/
+*.obj
+*.exe
+*.exe.recipe
+*.ilk
+*.log
+*.iobj
+*.ipdb
+*.pdb
+*.vcxproj.FileListAbsolute.txt
+*.idb
+*.Build.CppClean.log
