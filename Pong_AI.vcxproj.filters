@@ -25,6 +25,15 @@
     <Filter Include="Header Files\GL">
       <UniqueIdentifier>{6d641feb-657e-45fd-892f-9caac6d0c0e9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Library Files\dll%27s">
+      <UniqueIdentifier>{8285e348-4d16-4fd6-9762-797a9d83bb08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library Files\dll%27s\x86">
+      <UniqueIdentifier>{0194aa65-8b79-425f-b1e8-088c529d250c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library Files\dll%27s\x64">
+      <UniqueIdentifier>{ee0d71aa-0f8c-41bd-84f4-3262a08ef2c8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\main.cpp">
@@ -64,5 +73,19 @@
     <Library Include="Src\lib\libx86\freeglut.lib">
       <Filter>Library Files\x86</Filter>
     </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="x64\Debug\freeglut.dll">
+      <Filter>Library Files\dll%27s\x64</Filter>
+    </None>
+    <None Include="x64\Release\freeglut.dll">
+      <Filter>Library Files\dll%27s\x64</Filter>
+    </None>
+    <None Include="Debug\freeglut.dll">
+      <Filter>Library Files\dll%27s\x86</Filter>
+    </None>
+    <None Include="Release\freeglut.dll">
+      <Filter>Library Files\dll%27s\x86</Filter>
+    </None>
   </ItemGroup>
 </Project>
