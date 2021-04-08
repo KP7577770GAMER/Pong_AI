@@ -52,9 +52,6 @@ void Pong::pong_script(int w, int h)
 	if (pong1.py > h / 2 - pong1.size)if (pong1.sy > 0)pong1.sy *= -1;
 	if (pong1.py < -h / 2 + pong1.size)if (pong1.sy < 0)pong1.sy *= -1;
 
-	if (keyBuff['w'] && player1.py < window1.height / 2 - 50)player1.py+=4;
-	if (keyBuff['s'] && player1.py > -window1.height / 2 + 50)player1.py-=4;
-
 	if (pong1.px - pong1.size < player1.px + player1.width
 		&& pong1.py - pong1.size < player1.py + player1.height
 		&& pong1.py + pong1.size > player1.py - player1.height) {

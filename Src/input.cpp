@@ -10,3 +10,9 @@ void Input::key_Dn(unsigned char key, int X, int Y) {
 void Input::key_Up(unsigned char key, int X, int Y) {
 	keyBuff[key] = false;
 }
+
+void Input::key_Ck()
+{
+	if (keyBuff['w'] && pong1.player1.py < window1.height / 2 - 50)pong1.player1.py += 4;
+	if (keyBuff['s'] && pong1.player1.py > -window1.height / 2 + 50)pong1.player1.py -= 4;
+}

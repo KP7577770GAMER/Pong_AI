@@ -30,6 +30,7 @@ void Display::display() {
 void Display::refresh() {
 	if (!pong1.paused && !pong1.check_win())pong1.pong_script(window1.width, window1.height);
 	if (!pong1.check_win())ai1.AI_script(window1.width, window1.height);
+	if (!pong1.paused && !pong1.check_win())Input::key_Ck();
 	Sleep(1000 / 60);
 	glutPostRedisplay();
 }

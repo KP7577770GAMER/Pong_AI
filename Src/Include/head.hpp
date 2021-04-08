@@ -68,6 +68,8 @@ class Input {
 protected:
 	static void key_Dn(unsigned char, int, int);
 	static void key_Up(unsigned char, int, int);
+public:
+	static void key_Ck();
 };
 
 class GLUT : public Display, public Input {
